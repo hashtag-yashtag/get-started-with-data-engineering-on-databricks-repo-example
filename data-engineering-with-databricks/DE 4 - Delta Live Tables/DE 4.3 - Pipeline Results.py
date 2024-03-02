@@ -87,7 +87,7 @@
 # COMMAND ----------
 
 # MAGIC %sql
-# MAGIC DESCRIBE EXTENDED customers_silver
+# MAGIC DESCRIBE EXTENDED orders_silver
 
 # COMMAND ----------
 
@@ -98,7 +98,7 @@
 # COMMAND ----------
 
 # MAGIC %sql
-# MAGIC SELECT * FROM __apply_changes_storage_customers_silver
+# MAGIC SELECT * FROM __apply_changes_storage_orders_silver
 
 # COMMAND ----------
 

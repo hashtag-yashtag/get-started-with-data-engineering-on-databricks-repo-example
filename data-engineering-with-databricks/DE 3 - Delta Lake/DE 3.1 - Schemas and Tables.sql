@@ -53,6 +53,7 @@
 -- COMMAND ----------
 
 CREATE SCHEMA IF NOT EXISTS ${da.schema_name}_default_location;
+CREATE SCHEMA IF NOT EXISTS ${da.schema_name}_custom_location location '${da.paths.working_dir}/_custom_location.db';
 
 -- COMMAND ----------
 
@@ -66,6 +67,10 @@ CREATE SCHEMA IF NOT EXISTS ${da.schema_name}_default_location;
 -- COMMAND ----------
 
 DESCRIBE SCHEMA EXTENDED ${da.schema_name}_default_location;
+
+-- COMMAND ----------
+
+DESCRIBE SCHEMA EXTENDED ${da.schema_name}_custom_location;
 
 -- COMMAND ----------
 
@@ -177,6 +182,10 @@ SELECT * FROM external_table;
 -- MAGIC
 -- MAGIC  
 -- MAGIC Let's note the location of the table's data in this lesson's working directory.
+
+-- COMMAND ----------
+
+Describe table extended temp_delays
 
 -- COMMAND ----------
 
